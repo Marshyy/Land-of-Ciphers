@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 // icons
 import { AiFillHome, AiOutlineHome } from 'react-icons/ai';
 import {
@@ -36,15 +37,17 @@ const mobNavOptions = [
     icon2: <IoMdInformationCircle />,
   },
 ];
-const Nav = (props) => {
-  const activeSection = props.current;
+const Nav = () => {
+  const router = useRouter();
+  const activeSection =
+    router.pathname == '/' ? 'home' : router.pathname.split('/')[1];
 
   return (
     <div className="    mx-auto lg:px-20   ">
       <div className=" hidden w-full py-3  lg:inline-block">
         <div className="block md:float-left">
           <a href="/">
-            <span className="cursor-pointer  font-montserrat  text-4xl font-extrabold text-black">
+            <span className="cursor-pointer  font-montserrat  text-4xl font-extrabold ">
               Land of Ciphers
             </span>
           </a>
