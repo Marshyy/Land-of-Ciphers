@@ -1,12 +1,14 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 // icons
+
+import { MdOutlineLandscape } from 'react-icons/md';
 import { AiFillHome, AiOutlineHome } from 'react-icons/ai';
 import {
   IoIosInformationCircleOutline,
   IoMdInformationCircle,
 } from 'react-icons/io';
-import { RiFunctionFill, RiFunctionLine } from 'react-icons/ri';
+
 const categories = [
   {
     name: 'About',
@@ -46,8 +48,9 @@ const Nav = () => {
     <div className="    mx-auto lg:px-20   ">
       <div className=" hidden w-full py-3  lg:inline-block">
         <div className="block md:float-left">
-          <a href="/">
-            <span className="cursor-pointer  font-montserrat  text-4xl font-extrabold ">
+          <a href="/" className="flex items-center text-brandLightBlue">
+            <MdOutlineLandscape className="mr-2 text-5xl " />
+            <span className="cursor-pointer  font-montserrat  text-4xl ">
               Land of Ciphers
             </span>
           </a>
@@ -58,11 +61,11 @@ const Nav = () => {
             <a href={`/${category.slug}`} key={index}>
               <span
                 className={`
-              mt-2 ml-7 cursor-pointer  px-1 font-semibold md:float-right 
+              mt-2 ml-7 cursor-pointer  px-1 font-semibold  md:float-right 
               ${
                 activeSection.toLowerCase() === category.origin.toLowerCase()
-                  ? ' text-red-500'
-                  : ' text-gray-700'
+                  ? ' text-brandPink'
+                  : ' text-brandDarkGreen hover:text-gray-300'
               }
               `}
               >
@@ -73,11 +76,17 @@ const Nav = () => {
         </div>
       </div>
       {/* mobile nav */}
-      <div className="  flex w-screen items-center  p-3  lg:hidden">
-        <div className=" flex w-full justify-between text-xs ">
+      <div className="  flex w-screen items-center justify-between  p-3  lg:hidden">
+        <a href="/" className="flex  items-center text-brandLightBlue">
+          <MdOutlineLandscape className="mr-2 text-5xl " />
+          <span className=" min-w-max  font-montserrat  text-xl ">
+            Land of Ciphers
+          </span>
+        </a>
+        <div className=" flex w-full justify-end text-xs ">
           {mobNavOptions.map((category, index) => (
             <a
-              className="flex flex-col items-center"
+              className="mx-2 flex flex-col items-center"
               href={`/${category.slug}`}
               key={index}
             >
@@ -91,17 +100,17 @@ const Nav = () => {
               }
                 `}
               >
-                {activeSection.toLowerCase() == category.origin.toLowerCase()
+                {/* {activeSection.toLowerCase() == category.origin.toLowerCase()
                   ? category.icon2
-                  : category.icon1}
+                  : category.icon1} */}
               </div>
               <span
-                className={` mx-1
+                className={` mx-1 
                
               ${
                 activeSection.toLowerCase() === category.origin.toLowerCase()
-                  ? ' font-bold text-black'
-                  : ' text-gray-700 '
+                  ? ' font-bold text-brandPink'
+                  : ' text-gray-300 '
               }
               `}
               >
