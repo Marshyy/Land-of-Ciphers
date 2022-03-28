@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
+    './sections/**/*.{js,ts,jsx,tsx}',
   ],
   presets: [],
 
@@ -35,6 +36,8 @@ module.exports = {
       brandDarkGreen: '#2C463F',
       brandPink: '#B6597F',
       brandLightBlue: '#B5D4C8',
+      brandDarkGray: '#141415',
+      brandLightGray: '#1d1e1f',
     },
     spacing: {
       px: '1px',
@@ -252,14 +255,9 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      // helv: "helv",
-      // helvLight: "helvLight",
-      // helvRegular: "helv-regular",
-      // helvBold: "helv-bold",
-      // helvThin: "helv-thin",
-      // poppins: "poppins",
-      // primary1: "font-leagueSpartan",
+      sourceCodepro: 'sourceCodepro',
       montserrat: 'montserrat',
+      roboto: 'roboto',
       leagueSpartan: 'league-spartan',
       sans: [
         'ui-sans-serif',
@@ -468,9 +466,9 @@ module.exports = {
       '70vh': '70vh',
       '80vh': '80vh',
       '90vh': '90vh',
+      '100vh': '100vh',
       full: '100%',
       screen: '100vh',
-      'ahum-contact-screen': '60vh',
     }),
     inset: (theme, { negative }) => ({
       auto: 'auto',

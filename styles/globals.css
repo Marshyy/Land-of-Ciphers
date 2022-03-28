@@ -7,3 +7,11 @@
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+.font-sourceCodepro {
+  font-family: 'Source Code Pro', monospace;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}

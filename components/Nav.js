@@ -45,18 +45,18 @@ const Nav = () => {
     router.pathname == '/' ? 'home' : router.pathname.split('/')[1];
 
   return (
-    <div className="    mx-auto lg:px-20   ">
+    <div className=" mx-auto bg-black text-white   lg:sticky lg:px-20   ">
       <div className=" hidden w-full py-3  lg:inline-block">
         <div className="block md:float-left">
           <a href="/" className="flex items-center text-brandLightBlue">
             <MdOutlineLandscape className="mr-2 text-5xl " />
-            <span className="cursor-pointer  font-montserrat  text-4xl ">
+            <span className=" cursor-pointer font-sourceCodepro  text-4xl ">
               Land of Ciphers
             </span>
           </a>
         </div>
         {/* desktop nav */}
-        <div className="hidden md:float-right md:contents ">
+        <div className="font-sourceCodePro hidden md:float-right md:contents">
           {categories.map((category, index) => (
             <a href={`/${category.slug}`} key={index}>
               <span
