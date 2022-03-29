@@ -15,7 +15,7 @@ const errorPage = () => {
           Let's go back{' '}
           <a
             href="/"
-            class="mx-3 rounded-md border-1 border-white bg-white px-2 py-1 font-bold text-black  hover:bg-black hover:text-white"
+            class="mx-3 rounded-sm border-1 border-white bg-white px-2 py-1 font-bold text-black  hover:bg-black hover:text-white"
           >
             Home
           </a>
