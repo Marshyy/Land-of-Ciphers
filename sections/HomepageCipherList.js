@@ -2,7 +2,7 @@ import React from 'react';
 
 const ciphers = [
   {
-    name: 'Ceaser',
+    name: 'Ceaser and Shift',
     slug: 'ceaser',
     image: 'https://i.imgur.com/QQQQQQQ.png',
   },
