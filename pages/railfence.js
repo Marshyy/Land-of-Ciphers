@@ -46,8 +46,14 @@ const railfence = () => {
     let k = Math.round(message.length/(2*(railValue-1)));
 
     parts[0] = message.slice(0, k);
-    parts[1] = message.slice(0+k, message.length-k);
-    parts[2] = message.slice(-k);
+
+    if (message.length%2 == 0) {
+      parts[1] = message.slice(0+k, message.length-k+1);
+      parts[2] = message.slice(-k+1);
+    } else {
+      parts[1] = message.slice(0+k, message.length-k);
+      parts[2] = message.slice(-k);
+    }
 
     let result = "";
 
@@ -100,28 +106,6 @@ const railfence = () => {
             }}
           >
             Clear Encrypt
-          </button>
-        </div>
-
-        <div class=" w-1/2 p-5">
-          <div class="font-sourceCodepro text-xl text-gray-500">Rail Value</div>
-          <textarea
-            // value={secretKey}
-            onChange={(e) => {
-              setRailValue(e.target.value);
-            }}
-            className="my-3  w-full bg-brandDarkGray p-2  outline-none placeholder:text-gray-600"
-            rows="1"
-            placeholder="Rail Value Here, Default 3"
-          ></textarea>
-          <button
-            className="rounded-md bg-brandPink px-3 py-2 text-white"
-            onClick={() => {
-              setPlainText('');
-              setCipherText('');
-            }}
-          >
-            Clear All
           </button>
         </div>
 

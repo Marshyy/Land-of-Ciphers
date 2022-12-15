@@ -21,11 +21,6 @@ const ciphers = [
     slug: 'playfair',
     image: 'https://i.imgur.com/QQQQQQQ.png',
   },
-  {
-    name: 'Hill',
-    slug: 'hill',
-    image: 'https://i.imgur.com/QQQQQQQ.png',
-  },
 ];
 const HomepageCipherList = () => {
   return (

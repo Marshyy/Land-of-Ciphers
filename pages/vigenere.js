@@ -85,6 +85,7 @@ const vigenere = () => {
           <div class="font-sourceCodepro text-xl text-gray-500">Key</div>
           <textarea
             // value={secretKey}
+            id = "textarea-id"
             onChange={(e) => {
               setKey(e.target.value);
             }}
@@ -97,6 +98,8 @@ const vigenere = () => {
             onClick={() => {
               setPlainText('');
               setCipherText('');
+              setKey('key');
+              document.getElementById('textarea-id').value = "";
             }}
           >
             Clear All

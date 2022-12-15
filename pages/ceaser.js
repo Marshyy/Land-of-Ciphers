@@ -6,6 +6,7 @@ const ceaser = () => {
   const [shiftValue, setShiftValue] = useState(3);
 
   const ceaserShift = (message, shift) => {
+    if (shift == NaN) setShiftValue(3);
     if (Object.is(shift, 0)) {
       return setCipherText(message);
     } else if (Object.is(shift, -0)) {
@@ -75,9 +76,13 @@ const ceaser = () => {
           </div>
           <textarea
             value={shiftValue}
+            type = "number"
+            id = "textarea-id"
+            
             onChange={(e) => {
               setShiftValue(parseInt(e.target.value));
             }}
+            
             className="my-3  w-full bg-brandDarkGray p-2  outline-none placeholder:text-gray-600"
             rows="1"
             placeholder="Shift Value Here, Default 3"
@@ -87,6 +92,8 @@ const ceaser = () => {
             onClick={() => {
               setPlainText('');
               setCipherText('');
+              setShiftValue(3);
+              document.getElementById('textarea-id').value = "";
             }}
           >
             Clear All
