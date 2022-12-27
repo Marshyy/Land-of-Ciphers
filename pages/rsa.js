@@ -28,26 +28,24 @@ const rsa = () => {
             className="my-3  w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600"
             rows="10"
           />
-          <div class="font-sourceCodepro text-xl text-gray-500">Public Key</div>
-          <textarea
-            value={plainText}
-            onChange={(e) => {
-              setPlainText(e.target.value);
-            }}
-            className="my-3  w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600"
+          <div className="flex items-center justify-between">
+            <div class="font-sourceCodepro text-xl text-gray-500 min-w-max mx-1">Public Key</div>
+            <textarea
+              value={plainText}
+            className="my-3 w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600 mx-3"
             rows="1"
             readOnly
-          />
-          <div class="font-sourceCodepro text-xl text-gray-500">Private Key</div>
-          <textarea
-            value={plainText}
-            onChange={(e) => {
-              setPlainText(e.target.value);
-            }}
-            className="my-3  w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600"
+            />
+          </div>
+          <div className="flex items-center justify-between">
+            <div class="font-sourceCodepro text-xl text-gray-500 min-w-max">Private Key</div>
+            <textarea
+              value={plainText}
+            className="my-3 w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600 mx-3"
             rows="1"
             readOnly
-          />
+            />
+          </div>
         </div>
 
         {/* Top is one div and bottom is another div */}
@@ -64,21 +62,20 @@ const rsa = () => {
             rows="10"
             placeholder="Encrypted text will appear here"
           ></textarea>
-          <div class="font-sourceCodepro text-xl text-gray-500">Public Key</div>
-          <textarea
-            value={plainText}
-            onChange={(e) => {
-              setPlainText(e.target.value);
-            }}
-            className="my-3  w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600"
-            rows="1"
-            readOnly
-          />
-          <div className="flex min-w-max">
-            <div class="font-sourceCodepro text-xl text-gray-500">Private Key</div>
+          <div className="flex items-center justify-between">
+            <div class="font-sourceCodepro text-xl text-gray-500 min-w-max mx-1">Public Key</div>
             <textarea
               value={plainText}
-            className="my-3  w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600"
+            className="my-3 w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600 mx-3"
+            rows="1"
+            readOnly
+            />
+          </div>
+          <div className="flex items-center justify-between">
+            <div class="font-sourceCodepro text-xl text-gray-500 min-w-max">Private Key</div>
+            <textarea
+              value={plainText}
+            className="my-3 w-full bg-brandDarkGray p-2 outline-none placeholder:text-gray-600 mx-3"
             rows="1"
             readOnly
             />

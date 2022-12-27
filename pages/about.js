@@ -22,6 +22,31 @@ const about = () => {
             <div class="flex w-full items-center">
               <div className="flex w-1/2 items-center pr-5">
                 <div className="flex w-full items-center justify-between rounded-md bg-gradient-to-tr from-brandDarkGray to-black px-5 py-2 ">
+                  <div className="flex w-full items-center justify-between rounded-md bg-gradient-to-tr from-brandDarkGray to-black px-5 py-2 ">
+                    <div className="flex flex-col items-center">
+                      <div
+                        class=" m-3 h-32 w-32 rounded-full bg-cover bg-center"
+                        style={{
+                          backgroundImage: `url('https://avatars.githubusercontent.com/u/28839897?v=4')`,
+                        }}
+                      />
+                      <div class="font-sourceCodepro text-lg text-brandLightBlue">
+                        Marshyy
+                      </div>
+                    </div>
+                    <a
+                      href="https://github.com/Marshyy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <DiGithubAlt className="text-8xl text-brandLightGray" />
+                      <div class="text-xs  text-gray-500 underline">
+                        View on Github
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div className="flex w-1/2 items-center pl-5">
                   <div className="flex flex-col items-center">
                     <div
                       class=" m-3 h-32 w-32 rounded-full bg-cover bg-center"
@@ -35,31 +60,6 @@ const about = () => {
                   </div>
                   <a
                     href="https://github.com/richinrix"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <DiGithubAlt className="text-8xl text-brandLightGray" />
-                    <div class="text-xs  text-gray-500 underline">
-                      View on Github
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="flex w-1/2 items-center pl-5">
-                <div className="flex w-full items-center justify-between rounded-md bg-gradient-to-tr from-brandDarkGray to-black px-5 py-2 ">
-                  <div className="flex flex-col items-center">
-                    <div
-                      class=" m-3 h-32 w-32 rounded-full bg-cover bg-center"
-                      style={{
-                        backgroundImage: `url('https://avatars.githubusercontent.com/u/28839897?v=4')`,
-                      }}
-                    />
-                    <div class="font-sourceCodepro text-lg text-brandLightBlue">
-                      Marshyy
-                    </div>
-                  </div>
-                  <a
-                    href="https://github.com/Marshyy"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
