@@ -33,12 +33,23 @@ const ceaser = () => {
       <div class="w-full text-center text-6xl font-bold text-brandPink">
         Ceaser & Shift Cipher
       </div>
-      <div className="my-3 w-full text-left text-sm text-gray-600">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-        praesentium aliquam illum consequatur vitae inventore distinctio hic
-        nisi, sint molestias quam dignissimos et! Rem praesentium, soluta ipsum,
-        explicabo temporibus officiis iste minima odio iusto, quidem
-        necessitatibus quas. Quidem, ipsa nostrum!
+      <div className="my-3 w-full text-left text-sm text-gray-600" style={{ whitespace: 'pre-wrap' }}>
+        The shift cipher is a type of substitution cipher. 
+        In a shift cipher, the letters of the alphabet are shifted a certain number of places to the left or right. 
+        For example, with a shift of 3 to the left, A would become X, B would become Y, and C would become Z. 
+        Shift cipher is not very secure because it is easy to break. 
+        It is not very secure because there are only 26 possible shifts (one for each letter of the alphabet), 
+        and it is relatively easy to break the cipher by trying all possible shifts.
+        <br/><br/>
+        The Caesar cipher is a type of substitution cipher that was used by the Roman leader Julius Caesar to encrypt messages. 
+        In this cipher, each letter in the plaintext is replaced by a letter that is a three number of positions down the alphabet. 
+        For example, A is replaced by D, B is replaced by E, and so on. 
+        The Caesar cipher is easy to implement and use, but not very secure due to the same reason as shift cipher, There is only so many combinations. 
+        <br/><br/>
+        Both the Caesar and shift ciphers are considered to be relatively weak forms of encryption, 
+        as they can be easily broken using simple techniques such as frequency analysis. 
+        However, they can still be useful for simple messages or as a way to introduce the concept of encryption to beginners. 
+        More secure forms of encryption are typically used for sensitive or important communications.
       </div>
       <div class="flex w-full">
         <div class=" w-1/2 p-5">

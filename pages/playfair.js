@@ -160,11 +160,37 @@ const playfair = () => {
         Playfair Cipher
       </div>
       <div className="my-3 w-full text-left text-sm text-gray-600">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-        praesentium aliquam illum consequatur vitae inventore distinctio hic
-        nisi, sint molestias quam dignissimos et! Rem praesentium, soluta ipsum,
-        explicabo temporibus officiis iste minima odio iusto, quidem
-        necessitatibus quas. Quidem, ipsa nostrum!
+      The Playfair cipher is a manual symmetric encryption technique and was the first practical digraph substitution cipher. 
+      It was invented by Charles Wheatstone, but was popularized by Lord Playfair who promoted the use of the cipher.
+      <br/><br/>
+      The Playfair cipher uses a 5 by 5 grid of letters, which is filled in with a keyword or phrase. 
+      The remaining letters of the alphabet are then filled in, skipping any duplicate letters. 
+      For example, using the keyword "HELLO", the grid would be filled in as follows:
+      <br/><br/>
+      H E L O A<br/>
+      B C D F G<br/>
+      I K M N P<br/>
+      Q R S T U<br/>
+      V W X Y Z<br/>
+      <br/><br/>
+      To encrypt a message using the Playfair cipher, the message is first broken into digraphs (pairs of letters). 
+      If the message has an odd number of letters, an "X" is added to the end to make it even. 
+      For example, the message "HELLO WORLD" would be broken into the following digraphs: "HE", "LL", "OW", "RL", "DX".
+      <br/><br/>
+      To encrypt a digraph, the letters are first located in the grid. 
+      If the two letters are in the same row, the letters in the corresponding columns are used. 
+      If the letters are in the same column, the letters in the corresponding rows are used. 
+      If the letters are in different rows and columns, the letters at the intersections of their rows and columns are used.
+      <br/><br/>
+      For example, to encrypt the digraph "HE", the letters "H" and "E" would be located in the grid. 
+      Since they are in the same row, the letters in the corresponding columns would be used, resulting in the encrypted digraph "OF".
+      <br/><br/>
+      The Playfair cipher is more secure than simple substitution ciphers because it uses digraphs instead of single letters, 
+      making it more resistant to frequency analysis attacks. 
+      However, it can still be broken using statistical techniques such as the index of coincidence. 
+      Despite its vulnerabilities, the Playfair cipher has a long history and was used extensively during World War II.
+      <br/><br/>
+      In the demonstration, The Cipher goes further and adds "1234567890.,!?@$%()/`# " as possible elements to encrypt.
       </div>
       <div class="flex w-full">
         <div class=" w-1/2 p-5">

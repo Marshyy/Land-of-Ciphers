@@ -73,11 +73,33 @@ const railfence = () => {
         RailFence Cipher
       </div>
       <div className="my-3 w-full text-left text-sm text-gray-600">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-        praesentium aliquam illum consequatur vitae inventore distinctio hic
-        nisi, sint molestias quam dignissimos et! Rem praesentium, soluta ipsum,
-        explicabo temporibus officiis iste minima odio iusto, quidem
-        necessitatibus quas. Quidem, ipsa nostrum!
+      The Rail Fence cipher is a simple form of transposition cipher that was first described by Lewis Carroll, 
+      the famous author of Alice's Adventures in Wonderland, in his book "The Dynasts."
+      The cipher rearranges the order of the letters in a message. 
+      It is called a "rail fence" because the letters in the ciphertext form a pattern that resembles a fence, 
+      with the letters zigzagging back and forth across the message.
+      <br/><br/>
+      To encrypt a message using the rail fence cipher, the message is written out in a grid with a certain number of rows. 
+      For example, if the message is "HELLO" and the grid has two rows, it would look like this:
+      <br/>
+      H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O
+      <br/>&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;L
+      <br/>&nbsp;&nbsp;&nbsp;&nbsp;L
+      <br/><br/>
+      The ciphertext is then created by reading the letters in the grid from top to bottom, 
+      starting with the top row. In this example, the ciphertext would be "HOELL".
+      <br/><br/>
+      To decrypt a message that has been encrypted using the rail fence cipher, 
+      the same grid is used and the ciphertext is written out in the grid, 
+      with the letters occupying the same positions as they did in the original message. 
+      The plaintext is then obtained by reading the letters in the grid from top to bottom, starting with the top row.
+      <br/><br/>
+      The rail fence cipher is a very basic transposition cipher and is not very secure. 
+      It can easily be broken by someone with even a basic knowledge of cryptanalysis. 
+      However, it is still a popular cipher among amateur cryptographers because of its simplicity. 
+      It can also be used as a stepping stone to learning more complex ciphers. 
+      <br/><br/>
+      In the demonstration below, The Fence value is 3. 
       </div>
       <div class="flex w-full">
         <div class=" w-1/2 p-5">
