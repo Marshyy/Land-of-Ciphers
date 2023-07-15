@@ -19,7 +19,7 @@ const about = () => {
             <div class="my-7 w-full text-left font-montserrat text-4xl font-bold text-brandPink">
               Contributors
             </div>
-            <div class="flex w-full items-center">
+            <div class="flex w-full flex-row-reverse items-center">
               <div className="flex w-1/2 items-center pr-5">
                 <div className="flex w-full items-center justify-between rounded-md bg-gradient-to-tr from-brandDarkGray to-black px-5 py-2 ">
                   <div className="flex flex-col items-center">

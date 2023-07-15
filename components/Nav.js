@@ -15,7 +15,6 @@ const categories = [
     slug: 'about',
     origin: 'about',
   },
-
   {
     name: 'Home',
     origin: 'home',
@@ -45,7 +44,7 @@ const Nav = () => {
     router.pathname == '/' ? 'home' : router.pathname.split('/')[1];
 
   return (
-    <div className=" mx-auto bg-black text-white   lg:sticky lg:px-20   ">
+    <div className=" sticky top-0 mx-auto   bg-black text-white lg:px-20   ">
       <div className=" hidden w-full py-3  lg:inline-block">
         <div className="block md:float-left">
           <a href="/" className="flex items-center text-brandLightBlue">
